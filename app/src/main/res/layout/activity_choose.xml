@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/angrierRed"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".common.activities.ChooseActivity">
+    <ImageView
+        android:id="@+id/buttonLogo"
+        android:layout_width="274dp"
+        android:layout_height="181dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logo" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonLocal"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        
+        android:textColor="@color/angriestRed"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/custom_button_chose"
+        android:text="@string/localTitle"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonClientServer"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:textColor="@color/angriestRed"
+        android:layout_marginVertical="10dp"
+        android:text="@string/clientServerTitle"
+        android:background="@drawable/custom_button_chose" />
+
+</LinearLayout>

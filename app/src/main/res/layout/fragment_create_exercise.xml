@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mvp.exercise.CreateExerciseFragment"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/angrierRed">
+
+        <ImageView
+            android:id="@+id/buttonBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            style="?android:textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/createExerciseTitle"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:padding="5dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/basicInfoTitle"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:paddingHorizontal="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="5dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingHorizontal="10dp"
+        android:background="@color/angrierRed">
+
+        <EditText
+            android:id="@+id/editTextTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/textViewTitle"
+            android:background="@color/angrierRed"
+            android:hint="@string/requiredHint"
+            android:singleLine="true"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:minWidth="140dp"
+            android:text="@string/exerciseTitle"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutTypeOfIntensisty"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/angrierRed"
+        android:paddingHorizontal="10dp">
+
+        <TextView
+            android:id="@+id/textViewSelectedIntensisty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@+id/textViewDefaultIntensisty"
+            android:background="@color/angrierRed"
+            android:hint="@string/defaultIntensityHint"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/textViewDefaultIntensisty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:minWidth="140dp"
+            android:text="@string/defaultIntensityTitle"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutNameOfIntensisty"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/angrierRed"
+        android:paddingHorizontal="10dp"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/editTextNameOfIntensisty"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/textViewNameOfIntensisty"
+            android:background="@color/angrierRed"
+            android:hint="@string/requiredHint"
+            android:singleLine="true"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/textViewNameOfIntensisty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:minWidth="140dp"
+            android:text="@string/intensitySpecs"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/angrierRed"
+        android:paddingHorizontal="10dp">
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/editTextCalories"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/textViewCalories"
+            android:value="50.0"
+            android:valueFrom="0.0"
+            android:valueTo="1500.0" />
+
+        <TextView
+            android:id="@+id/textViewCalories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:minWidth="140dp"
+            android:text="@string/caloriesOn100g"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/angrierRed"
+        android:paddingHorizontal="10dp">
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/editTextCards"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/textViewCards"
+            android:value="20.0"
+            android:valueFrom="0.0"
+            android:valueTo="100.0"/>
+
+        <TextView
+            android:id="@+id/textViewCards"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:minWidth="140dp"
+            android:text="@string/cardsOn100g"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/angrierRed"
+        android:paddingHorizontal="10dp">
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/editTextStrengths"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/textViewStrengths"
+            android:value="10.0"
+            android:valueFrom="0.0"
+            android:valueTo="100.0"/>
+
+        <TextView
+            android:id="@+id/textViewStrengths"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:minWidth="140dp"
+            android:text="@string/strengthsOn100g"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/angrierRed"
+        android:paddingHorizontal="10dp">
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/editTextAgilitys"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/textViewAgilitys"
+            android:value="10.0"
+            android:valueFrom="0.0"
+            android:valueTo="100.0" />
+
+        <TextView
+            android:id="@+id/textViewAgilitys"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:minWidth="140dp"
+            android:text="@string/agilitysOn100g"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonCreateExercise"
+            android:layout_width="match_parent"
+            android:layout_height="148dp"
+            android:background="@drawable/custom_button_add_exercise"
+            android:text="@string/createExerciseTitle"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+</LinearLayout>

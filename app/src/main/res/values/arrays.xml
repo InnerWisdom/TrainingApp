@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="typesOfIntensistys">
+        <item>@string/defaultIntensityTitle</item>
+        <item>@string/customIntensityTitle</item>
+    </string-array>
+
+    <string-array name="menuItems">
+        <item>@string/menuItemCreateExercise</item>
+        <item>@string/menuItemViewStatistics</item>
+        <item>@string/menuItemSyncRecords</item>
+    </string-array>
+    <string-array name="nameOfWorkingout">Name of workout</string-array>
+</resources>
